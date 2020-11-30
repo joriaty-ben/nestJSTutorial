@@ -19,3 +19,6 @@
 - Install packages typorm and pg: `$ npm install --save @nestjs/typeorm typeorm pg`
 - Start postgres database: docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=secret -d postgres
 - Visit database: psql -h localhost  -p 5432 -U postgres --password
+- After starting with `$ npm run start` visit localhost:3000 and localhost:3000/events 
+
+###### At this point this is just a normal REST API
