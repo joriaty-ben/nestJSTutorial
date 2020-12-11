@@ -1,4 +1,4 @@
-import {Body, Controller, Logger, OnModuleInit, Param, Post} from '@nestjs/common';
+import { Controller, Logger, OnModuleInit, Param, Post} from '@nestjs/common';
 import { microserviceOptions } from "./grpc.options";
 import { Client, ClientGrpc } from '@nestjs/microservices';
 import { IGrpcService } from "./grpc.interface";

@@ -19,8 +19,8 @@ export class AppController {
   @GrpcMethod('AppController', 'Concatenate')
 
   concatenate(string: IStartString, metadata: any): IConcatenatedString {
-    this.logger.log('Concatenating ' + string.text);
-    return { textSum: this.getHello() + '' + string.text };
+    this.logger.log('Concatenating ' + this.getHello() + ' ' + string.text);
+    return { textSum: this.getHello() + ' ' + string.text };
   }
 
   @Get()
