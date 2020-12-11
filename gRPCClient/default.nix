@@ -1,6 +1,6 @@
 with import <nixpkgs> {};
 stdenv.mkDerivation rec {
-  name = "nestJS";
+  name = "nestJSgRPCClient";
   env = buildEnv { name = name; paths = buildInputs; };
   buildInputs = [
     nodejs-14_x

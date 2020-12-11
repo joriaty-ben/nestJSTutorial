@@ -6,7 +6,8 @@
 * check `default.nix` which is prepared for the `nix-shell`
 ##### basic ops:
 0. check nest version after installing: `$ nest --version`
-1. new project: `$ nest new <project-name>`
+1. new project: (`$ npm init` adds packacke-lock.json and package.json manually <- normally you should not need this)
+ and `$ nest new <project-name>`
 2. goto project dir: `$ cd <project-name>`
 3. start application: `$ npm run start`
 4. goto http://localhost:3000
@@ -22,3 +23,8 @@
 - After starting with `$ npm run start` visit localhost:3000 and localhost:3000/events 
 
 ###### At this point this is just a normal REST API
+###### gRPC
+- gRPC with mircoservices: `$ npm i --save @nestjs/microservices`
+- gRPC server: `$ npm i --save @grpc/proto-loader`
+- gRPC client: `$ npm install grpc`
+- start the server: `$ npm run start`

@@ -19,7 +19,7 @@ export class AppController {
   @GrpcMethod('AppController', 'Concatenate')
 
   concatenate(string: IStartString, metadata: any): IConcatenatedString {
-    this.logger.log('Concatednating ' + string.text);
+    this.logger.log('Concatenating ' + string.text);
     return { textSum: this.getHello() + '' + string.text };
   }
 

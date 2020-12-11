@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package app;
+
+service AppController {
+  rpc Concatenate (StartString) returns (ConcatenatedString);
+}
+
+message StartString {
+  string text = 1;
+}
+
+message ConcatenatedString {
+  string text_sum = 1;
+}
